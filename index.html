@@ -174,7 +174,27 @@ h3{margin:2px 0;font:900 16px system-ui;color:var(--gold);text-shadow:0 2px 0 va
 .emap{display:grid;grid-template-columns:1fr 1fr;gap:10px}
 .emap .btn{flex-direction:column;gap:2px;font-size:15px;min-height:84px;text-transform:none}
 .emap .btn small{font-size:12px;font-weight:800;opacity:.85}
-@media (orientation:landscape) and (max-height:500px){.wrap{gap:7px}.logo{font-size:clamp(34px,8vh,58px)}.crest{width:70px}.btn{padding:9px 14px;font-size:16px}.btn.big{font-size:20px;padding:11px}.lvgrid{grid-template-columns:repeat(8,1fr);gap:8px}.bigstars svg{width:48px;height:48px}.bigstars svg:nth-child(2){width:58px;height:58px}.wrap.wide{max-width:820px}.tcols{display:grid;grid-template-columns:1fr 1fr;gap:8px}}
+@media (orientation:landscape) and (max-height:500px){.wrap{gap:7px}.logo{font-size:clamp(34px,8vh,58px)}.crest{width:70px}.btn{padding:9px 14px;font-size:16px}.btn.big{font-size:20px;padding:11px}.lvgrid{grid-template-columns:repeat(8,1fr);gap:8px}.bigstars svg{width:48px;height:48px}.bigstars svg:nth-child(2){width:58px;height:58px}.wrap.wide{max-width:820px}.tcols{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+#sTitle{justify-content:center;padding-top:calc(env(safe-area-inset-top) + 6px);padding-bottom:calc(env(safe-area-inset-bottom) + 6px)}
+#sTitle .wrap{gap:5px;margin:0;max-width:560px}
+#sTitle .crest{width:48px;margin-bottom:-6px}
+#sTitle .logo{font-size:clamp(28px,7.2vh,48px);line-height:.86}
+#sTitle .byline{font-size:13px;margin:0}
+#sTitle .tag{display:none}
+#sTitle .btn{padding:7px 12px;font-size:14px}
+#sTitle .btn.big{padding:9px 12px;font-size:18px}
+#sTitle .btn.small{padding:6px 10px;font-size:13px}
+#sTitle .links{font-size:12px;gap:12px;margin-top:2px}
+#sTitle .credit{font-size:11px;margin-top:0}}
+@media (orientation:landscape) and (max-height:400px){
+#sTitle .wrap{gap:4px;max-width:640px}
+#sTitle .crest{width:36px;margin-bottom:-8px}
+#sTitle .logo{font-size:clamp(24px,6.5vh,40px)}
+#sTitle .byline,#sTitle .credit{display:none}
+#sTitle .btn{padding:6px 10px;font-size:13px;border-width:2px;box-shadow:0 3px 0 var(--ink),0 6px 12px rgba(0,0,0,.3)}
+#sTitle .btn.big{padding:7px 10px;font-size:16px}
+#sTitle .btn.small{padding:5px 8px;font-size:12px}
+#sTitle .links{display:none}}
 @media (min-width:700px) and (min-height:600px){.lvgrid{grid-template-columns:repeat(4,1fr)}}
 
 /* ---- title art pass ---- */
